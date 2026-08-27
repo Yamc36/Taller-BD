@@ -2,12 +2,12 @@
 ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
 
 -- Crear el usuario
-CREATE USER usuario_desarrollador IDENTIFIED BY "123456"
+CREATE USER yona_des IDENTIFIED BY "123456"
 DEFAULT TABLESPACE "USERS"
 TEMPORARY TABLESPACE "TEMP";
 
 -- Asignar cuota y permisos básicos
-ALTER USER usuario_desarrollador QUOTA UNLIMITED ON USERS;
-GRANT CREATE SESSION TO usuario_desarrollador;
-GRANT "RESOURCE" TO usuario_desarrollador;
-ALTER USER usuario_desarrollador DEFAULT ROLE "RESOURCE";
+ALTER USER yona_des QUOTA UNLIMITED ON USERS;
+GRANT CREATE SESSION TO yona_des;
+GRANT "RESOURCE" TO yona_des;
+ALTER USER yona_des DEFAULT ROLE "RESOURCE";
